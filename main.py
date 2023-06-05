@@ -6,7 +6,7 @@ class CodeQuest:
         self.master = master
         self.master.title("Кодовый квест")
 
-        self.intro_label = tk.Label(self.master, text="Добро пожаловать в Кодовый квест!\nВаша задача - пройти все уровни, решая задачи на программирование.")
+        self.intro_label = tk.Label(self.master, text="Добро пожаловать в Квест игру, которая поможет тебе начать изучать язык  Python!\nВаша задача - пройти все уровни, решая задачи на программирование.")
         self.intro_label.pack(pady=10)
 
         self.start_button = tk.Button(self.master, text="Начать игру", command=self.start_game)
