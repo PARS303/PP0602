@@ -24,6 +24,9 @@ class CodeQuest:
         self.hint_button = tk.Button(self.master, text="Подсказка", command=self.show_hint)
         self.hint_button.pack(pady=10)
 
+        self.show_answer_button = tk.Button(self.master, text="Показать ответ", command=self.show_answer)
+        self.show_answer_button.pack(pady=10)
+
         self.levels = [
             {
                 "task": "Создайте переменную 'a' со значением 5 и переменную 'b' со значением 7. Выведите сумму 'a' и 'b'.",
@@ -44,7 +47,7 @@ class CodeQuest:
             {
                 "task": "Напишите цикл 'for', который выводит числа от 1 до 5.",
                 "hint": "Используйте функцию 'range()' для создания диапазона чисел.",
-                "solution": "for i in range(1, 6):\n    print(i)"
+                "solution": "for i in range(1, 6):\nprint(i)"
             }
         ]
         self.current_level = 0
@@ -68,6 +71,8 @@ class CodeQuest:
     def show_hint(self):
         messagebox.showinfo("Подсказка", self.levels[self.current_level]['hint'])
 
+    def show_answer(self):
+        messagebox.showinfo("Ответ", self.levels[self.current_level]['solution'])
 if __name__ == "__main__":
     root = tk.Tk()
     app = CodeQuest(root)
