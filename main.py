@@ -28,7 +28,13 @@ class CodeQuest:
             {
                 "task": "Создайте переменную 'a' со значением 5 и переменную 'b' со значением 7. Выведите сумму 'a' и 'b'.",
                 "hint": "Используйте оператор '+', чтобы сложить две переменные.",
-                "solution": "a = 5\nb = 7\nprint(a + b)"
+                "solution": "a = 5\nb = 7\nprint(a + b)",
+                "solution": "a=5\nb=7\nprint(a+b)",
+                "solution": "a =5\nb = 7\nprint(a+ b)",
+                "solution": "a =5\nb =7\nprint(a +b)",
+                "solution": "a = 5\nb = 7\nPrint(a + b)",
+                "solution": "a=5\nb=7\nPrint(a+b)",
+
             },
             {
                 "task": "Напишите условный оператор, который проверяет, является ли число 'x' положительным. Если да, выведите 'Положительное'.",
